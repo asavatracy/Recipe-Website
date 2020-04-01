@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tupike Recipes | Home</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif|Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+		<div id="main">
+		<button class="openbtn" onclick="openNav()">&#9776; More</button> 
+		<section class="hero_image">
+		<div class="hero_wrapper">
+			<h1>WELCOME TO TUPIKE RECIPES</h1>
+			<p>Explore your cooking skills by searching for a variety of recipes using ingredients.</p>
+			<form class="form_code" action="searchresults.php" method="POST"> 
+			<input class="post_code" type="text" placeholder="Search for recipes......" name="search">
+				<button type="submit">Explore Kitchen</button>
+			</form>
+		</div>
+	</section>
+	
+	<div id="mySidebar" class="sidebar">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="shoppinglist.html">Shopping List</a>
+  <a href="contactus.html">Contact Us</a>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+</body>
+</html>
